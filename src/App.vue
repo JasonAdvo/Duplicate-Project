@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<div id="app">
+		<router-view></router-view>
+	</div>
+	<div>
+		<FooterMenu />
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FooterMenu from '/src/components/Btm_Menu.vue';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	components: {
+		FooterMenu,
+	},
+	name: 'App'
 }
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+	display: flex;
+	flex-direction: column;
 }
 </style>
