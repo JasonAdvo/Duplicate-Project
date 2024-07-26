@@ -42,7 +42,29 @@
 
 
 			<div class="sport-betting-container">
-
+				<div class="SB-content-container">
+					<div class="team">
+						<img src="/images/team-1.webp" alt="">
+						<p>Man Utd</p>
+					</div>
+					<div class="time-info">
+						<p>START TIME</p>
+						<p>17 Aug 2024</p>
+						<p>03:00</p>
+						<a href="https://www.ataskasino.com/sport-live/">
+							<div class="bet-now-container">BET NOW</div>
+						</a>
+					</div>
+					<div class="team">
+						<img src="/images/team-2.webp" alt="">
+						<p>Fulham</p>
+					</div>
+				</div>
+				<a href="https://www.ataskasino.com/sport-live/">
+					<div class="show-more-button-container">
+						Show More
+					</div>
+				</a>
 			</div>
 
 			<a href="https://www.atascasinobet.com/sign-up"><img src="/images/Atas-Post-Banner-(Eng).webp" alt=""
@@ -184,5 +206,61 @@ export default {
 
 .sport-betting-container {
 	background-image: url('/public/images/soccer-betting-img.jpg');
+	/* background-position: center; */
+	background-size: cover;
+	padding: 20px 0 10px 0;
+	margin-bottom: 16px;
+}
+
+.sport-betting-container a {
+	text-decoration: none;
+}
+
+.SB-content-container {
+	overflow: hidden;
+	padding: 10px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .6);
+	border-radius: 5px;
+	background: #fff;
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.SB-content-container p {
+	margin-bottom: 0;
+}
+
+.bet-now-container {
+	display: block;
+	background: #4caf50;
+	color: #fff;
+	padding: 8px 0;
+	line-height: 1;
+	width: 72px;
+	text-align: center;
+	border-radius: 4px;
+	margin: 5px auto 0;
+}
+
+.show-more-button-container {
+	background: #eee;
+	color: #000;
+	text-align: center;
+	padding: 10px;
+	font-size: 13px;
+	line-height: 1;
+	border-radius: 5px;
+	margin: 0 10px 10px;
+	box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.team img {
+	margin-bottom: 10px;
 }
 </style>

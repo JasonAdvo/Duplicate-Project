@@ -2,15 +2,15 @@
 	<div class="footer-menu">
 		<div class="relative" style="width: 100%;">
 			<div class="social-media-container">
-				<a href="https://t.me/kk8official" target="_blank" class="social-media-icon">
-					<img src="/images/telegram_icon.webp" alt="Telegram">
+				<a href="https://www.atascasinobet.com/sign-up" target="_blank" class="social-media-icon">
+					<img src="/images/download_side_btn.webp" alt="download">
 				</a>
-				<a href="https://www.facebook.com/um.kk8/" target="_blank" class="social-media-icon">
-					<img src="/images/Facebook_icon.png" alt="Facebook">
+				<a href="https://t.me/atas77channel" target="_blank" class="social-media-icon">
+					<img src="/images/telegram_side_btn.webp" alt="telegram">
 				</a>
-				<a href="https://api.whatsapp.com/send/?phone=601135220768&text&type=phone_number&app_absent=0"
-					target="_blank" class="social-media-icon">
-					<img src="/images/Whatsapp_icon.png" alt="WhatsApp">
+				<a href="https://api.whatsapp.com/send/?https://www.atascasinobet.com/sign-up" target="_blank"
+					class="social-media-icon">
+					<img src="/images/fb_side_btn.webp" alt="facebook">
 				</a>
 			</div>
 			<div class="footer-content">
@@ -71,14 +71,14 @@ export default {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -120px;
-	left: 30px;
+	top: -700%;
+	right: 0;
 }
 
 @media screen and (max-width: 426px) {
 	.social-media-container {
-		top: -135px !important;
-		left: 15px !important;
+		top: -700%;
+		right: 0;
 	}
 }
 
@@ -115,6 +115,7 @@ export default {
 }
 
 .social-media-icon img {
-	width: 40px;
+	width: 20px;
+	height: 108px;
 }
 </style>
