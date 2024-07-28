@@ -11,7 +11,9 @@
     "@splidejs/splide": "^4.1.4",
     "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
+    "material-icons": "^1.13.12",
     "vue": "^3.2.13",
+    "vue-i18n": "^10.0.0-beta.5",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {

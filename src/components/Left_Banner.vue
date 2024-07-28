@@ -36,6 +36,7 @@ export default {
 	background: rgba(0, 0, 0, .3);
 	padding: 10px 15px 30px 15px;
 	height: 100%;
+	border-right: 1px solid rgba(255, 255, 255, .5);
 }
 
 .LB_Imgs img {

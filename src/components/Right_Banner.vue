@@ -8,11 +8,11 @@
 			<div style="display: flex; margin-bottom: 23px">
 				<div class="RB_Small_Text_Container">
 					<div class="Baki">
-						<p>Baki:</p>
+						<p>{{ $t('message.balance') }} </p>
 						<p><strong>0.00</strong></p>
 					</div>
-					<p>Deposit Minimum: <strong>RM5.00</strong></p>
-					<p>Withdraw Minimum: <strong>RM50.00</strong></p>
+					<p>{{ $t('message.Min_Deposit') }} <strong>RM5.00</strong></p>
+					<p>{{ $t('message.Min_Withdrawal') }} <strong>RM50.00</strong></p>
 				</div>
 				<div class="RB_Cash_Btn_Container">
 					<a href="https://www.atascasinobet.com/sign-up" target="_blank">
@@ -45,40 +45,45 @@
 				<div class="SB-content-container">
 					<div class="team">
 						<img src="/images/team-1.webp" alt="">
-						<p>Man Utd</p>
+						<p>{{ $t('message.team_1') }}</p>
 					</div>
 					<div class="time-info">
-						<p>START TIME</p>
+						<p>{{ $t('message.start_time') }}</p>
 						<p>17 Aug 2024</p>
-						<p>03:00</p>
-						<a href="https://www.ataskasino.com/sport-live/">
-							<div class="bet-now-container">BET NOW</div>
+						<p class="time">03:00</p>
+						<a href="https://www.atascasinobet.com/sports-live">
+							<div class="bet-now-container"><p>{{ $t('message.bet_now') }}</p></div>
 						</a>
 					</div>
 					<div class="team">
 						<img src="/images/team-2.webp" alt="">
-						<p>Fulham</p>
+						<p>{{ $t('message.team_2') }}</p>
 					</div>
 				</div>
-				<a href="https://www.ataskasino.com/sport-live/">
+				<a href="https://www.atascasinobet.com/sports-live">
 					<div class="show-more-button-container">
-						Show More
+						<p>{{ $t('message.show_more') }}</p>
 					</div>
 				</a>
 			</div>
 
 			<a href="https://www.atascasinobet.com/sign-up"><img src="/images/Atas-Post-Banner-(Eng).webp" alt=""
-					style="margin-bottom: 16px;"></a>
+					style="margin-bottom: 16px;">
+			</a>
+			
 			<a href="https://www.atascasinobet.com/sign-up"><img src="/images/check_in.webp" alt=""
-					style="margin-bottom: 16px;"></a>
+					style="margin-bottom: 16px;">
+			</a>
 		</div>
 	</div>
 </template>
 
-
 <script>
+
+
 export default {
-	name: 'RightBanner'
+	name: 'RightBanner',
+	
 };
 </script>
 
@@ -87,6 +92,18 @@ export default {
 	background: rgba(0, 0, 0, .3);
 	padding: 10px 15px 30px 15px;
 	height: 100%;
+	border-left: 1px solid rgba(255, 255, 255, .5);
+}
+
+@media screen and (max-width: 430px) {
+	.Right_Banner_Container {
+		padding: 0 15px 0px 15px;
+	}
+	
+	.login-register-container {
+		padding-top: 0px !important;
+	}
+	
 }
 
 
@@ -190,6 +207,14 @@ export default {
 	.Baki strong {
 		font-size: 20px;
 	}
+
+	.button-grp a {
+		width: 50% !important;
+	}
+
+	.button-grp img {
+		width: 100% !important;
+	}
 }
 
 .button-grp {
@@ -251,8 +276,6 @@ export default {
 	color: #000;
 	text-align: center;
 	padding: 10px;
-	font-size: 13px;
-	line-height: 1;
 	border-radius: 5px;
 	margin: 0 10px 10px;
 	box-shadow: 0 0 3px rgb(0 0 0 / 30%);
@@ -260,7 +283,31 @@ export default {
 	cursor: pointer;
 }
 
+.show-more-button-container p {
+	font-size: 13px;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.team {
+	width: 30%;
+}
+
 .team img {
 	margin-bottom: 10px;
 }
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url('@/assets/fonts/digital-7.ttf') format('truetype');
+}
+
+.time {
+    display: block;
+    margin-top: 3px;
+    font-size: 21px;
+    color: #258D2D;
+    font-family: 'Digital-7', sans-serif;
+}
+
 </style>

@@ -1,5 +1,9 @@
 <template>
 	<div>
+		<PopUpCard />
+	</div>
+
+	<div>
 		<TopBanner />
 	</div>
 
@@ -31,7 +35,7 @@
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
 								<img :src="`/images/MB_${n}_Img.jpg`" alt="Image" @click="redirectToSignUp">
-								<button @click="redirectToSignUp">PLAY</button>
+								<button @click="redirectToSignUp"><p>{{ $t('message.Play') }}</p></button>
 							</div>
 						</div>
 					</div>
@@ -71,15 +75,18 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'; // Add this import
 import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
+import PopUpCard from '@/components/PopUpCard.vue';
 
 export default {
 	components: {
 		LeftBanner,
 		RightBanner,
 		TopBanner,
+		PopUpCard,
 	},
 	data() {
 		return {
@@ -87,7 +94,6 @@ export default {
 			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks.MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses.Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
 			selectedIndex: 0,
 			images: [
-				// Array of image objects containing paths to both selected and not selected status images
 				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp' },
 				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
 				{ notSelected: '/images/RICH_NotS.webp', selected: '/images/RICH_S.webp' },
@@ -106,6 +112,15 @@ export default {
 			],
 		};
 	},
+	setup() {
+    const { locale } = useI18n();
+	const changeLanguage = (lang) => {
+		locale.value = lang;
+	};
+	return {
+		changeLanguage
+	};
+},
 	methods: {
 		selectItem(event, index) {
 			this.selectedItem = index;
@@ -320,8 +335,7 @@ export default {
 .site-tabs {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 10px;
-	margin-bottom: 50px;
+	margin: 10px 0;
 }
 
 .image-container {
@@ -401,6 +415,10 @@ export default {
 	color: white;
 	font-size: 11px;
 	margin-bottom: 10px;
+}
+
+.image-wrapper p {
+	margin-bottom: 0;
 }
 
 .footer-content {
