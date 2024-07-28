@@ -35,7 +35,9 @@
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
 								<img :src="`/images/MB_${n}_Img.jpg`" alt="Image" @click="redirectToSignUp">
-								<button @click="redirectToSignUp"><p>{{ $t('message.Play') }}</p></button>
+								<button @click="redirectToSignUp">
+									<p>{{ $t('message.Play') }}</p>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -113,14 +115,14 @@ export default {
 		};
 	},
 	setup() {
-    const { locale } = useI18n();
-	const changeLanguage = (lang) => {
-		locale.value = lang;
-	};
-	return {
-		changeLanguage
-	};
-},
+		const { locale } = useI18n();
+		const changeLanguage = (lang) => {
+			locale.value = lang;
+		};
+		return {
+			changeLanguage
+		};
+	},
 	methods: {
 		selectItem(event, index) {
 			this.selectedItem = index;
