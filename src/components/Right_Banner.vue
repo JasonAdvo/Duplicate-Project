@@ -29,15 +29,16 @@
 			</div>
 
 			<div class="Tablet-Mobile-view">
-				<img src="/images/LB_Img_2.jpg" alt="Banner">
+				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_2.jpg"
+						alt="Banner"></a>
 				<div class="button-grp">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Share_btn.gif" alt="Share"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Downline_btn.png" alt="Downline"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Copy_btn.png" alt="Copy"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_More_btn.png" alt="More"></a>
 				</div>
 			</div>
@@ -83,8 +84,6 @@
 </template>
 
 <script>
-
-
 export default {
 	name: 'RightBanner',
 
@@ -102,6 +101,7 @@ export default {
 @media screen and (max-width: 430px) {
 	.Right_Banner_Container {
 		padding: 0 15px 0px 15px;
+		border-left: unset;
 	}
 
 	.login-register-container {
@@ -113,6 +113,7 @@ export default {
 
 .RB_Imgs img {
 	max-width: 100%;
+	border-radius: 20px;
 }
 
 .RB_Cash_Btn_Container {
@@ -239,6 +240,7 @@ export default {
 	background-size: cover;
 	padding: 20px 0 10px 0;
 	margin-bottom: 16px;
+	border-radius: 20px;
 }
 
 @media screen and (min-width: 1600px) {
@@ -324,5 +326,9 @@ export default {
 	font-size: 21px;
 	color: #258D2D;
 	font-family: 'Digital-7', sans-serif;
+}
+
+.no-br {
+	border-radius: unset !important;
 }
 </style>

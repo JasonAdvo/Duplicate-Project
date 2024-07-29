@@ -6,13 +6,13 @@
 				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_2.jpg"
 						alt="Share"></a>
 				<div class="button-grp">
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Share_btn.gif" alt="Share"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Downline_btn.png" alt="Downline"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_Copy_btn.png" alt="Copy"></a>
-					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6 no-br"
 							src="/images/M24_More_btn.png" alt="More"></a>
 				</div>
 			</div>
@@ -45,6 +45,7 @@ export default {
 .LB_Imgs img {
 	max-width: 100%;
 	margin-bottom: 16px;
+	border-radius: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -54,6 +55,7 @@ export default {
 
 	.Left_Banner_Container {
 		padding-bottom: 0px;
+		border-right: unset;
 	}
 }
 
@@ -64,5 +66,9 @@ export default {
 
 .button-grp img {
 	padding: 0 5px;
+}
+
+.no-br {
+	border-radius: unset !important;
 }
 </style>

@@ -14,7 +14,7 @@
 			</div>
 			<div class="carousel-item" data-bs-interval="4000">
 				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow">
-					<img width="100%" src="/images/LB_Slider_Img_2.jpg" class="d-block w-100" alt="slide3">
+					<img width="100%" src="/images/LB_Slider_Img_3.webp" class="d-block w-100" alt="slide3">
 				</a>
 
 			</div>
@@ -38,5 +38,6 @@ export default {
 <style>
 .carousel-item img {
 	height: 148px;
+	border-radius: 20px;
 }
 </style>

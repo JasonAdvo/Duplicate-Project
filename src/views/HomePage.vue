@@ -4,6 +4,10 @@
 	</div>
 
 	<div>
+		<BackToTop />
+	</div>
+
+	<div>
 		<TopBanner />
 	</div>
 
@@ -35,7 +39,7 @@
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
 								<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
-									<img :src="`/images/MB_${n}_Img.jpg`" alt="Image">
+									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 								</a>
 								<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
 									<p>{{ $t('message.Play') }}</p>
@@ -47,24 +51,22 @@
 
 				<div class="footer-content">
 					<h2>
-						Learn more about our big partner:
+						{{ $t('content.Learn_More') }}
 					</h2>
 					<p>
-						<a href="https://www.atascasinobet.com/">Atas Top Online Gaming Platform</a> | offers free
-						credit to new players, allowing you
-						to start your
-						gaming journey with extra advantages. As a trusted online gaming platform in Malaysia, we
-						provide a secure and reliable environment for all your gaming needs. Enjoy a wide range of games
-						with confidence, knowing you’re playing on a platform dedicated to fairness, security, and
-						top-notch customer service.
+						<a href="https://www.atascasinobet.com/"><strong>{{ $t('content.FP_Link_Word') }}</strong></a> |
+						{{
+							$t('content.FP_Content') }}
 					</p>
 					<p>
-						<a href="https://www.ataskasino.com/">Atas Casino</a> | H5 3.0 web version | Discover Malaysia's
-						premier gambling destination at Atas
-						Casino, featuring a wide array of games such as live casino, slots, and sports betting. Known
-						for its top-notch security, vast game variety, and excellent customer service, Atas Kasino
-						ensures an outstanding gaming experience for all players.
+						<a href="https://www.ataskasino.com/"><strong>{{ $t('content.SP_Link_Word') }}</strong></a> | {{
+							$t('content.SP_F_Content') }} | {{ $t('content.SP_S_Content') }}
 					</p>
+					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+						title="DMCA.com Protection Status" class="dmca-badge"> <img class="DMCA-width"
+							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
+							alt="DMCA.com Protection Status" /></a>
+
 				</div>
 			</div>
 		</div>
@@ -83,6 +85,7 @@ import LeftBanner from '/src/components/Left_Banner.vue';
 import RightBanner from '/src/components/Right_Banner.vue';
 import TopBanner from '/src/components/Top_Banner.vue';
 import PopUpCard from '@/components/PopUpCard.vue';
+import BackToTop from '@/components/BackToTop.vue';
 
 export default {
 	components: {
@@ -90,12 +93,68 @@ export default {
 		RightBanner,
 		TopBanner,
 		PopUpCard,
+		BackToTop,
 	},
 	data() {
 		return {
 			selectedItem: 0,
 			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks.MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses.Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
 			selectedIndex: 0,
+			altTexts: [
+				"Ramakien Belssing",
+				"Aztec 2",
+				"Football Fever",
+				"Firefly Hunter",
+				"Dark Ritual",
+				"Hungry Slime",
+				"Crazy Bounty",
+				"Dragon Chi’s Quest",
+				"Maya Elemental Totem",
+				"Xiang Qi Ways 2",
+				"Aztec",
+				"Last Samurai",
+				"Genie Mystery",
+				"Disco 777",
+				"Boom of Prosperity",
+				"World Cop Final",
+				"Astro Bunny",
+				"Cookie Hunter",
+				"Xmas Gift Delight",
+				"Mace of Hercules",
+				"Wheel of Gems",
+				"Scale of Heaven Anubis",
+				"Infinity Ocean",
+				"DJ Fever",
+				"Jewel Mastermind",
+				"PUBG 2",
+				"Fantastic Beast",
+				"Slotto 4D",
+				"Xiang Qi Ways",
+				"Candy Rush",
+				"Fortune God’s Pot",
+				"Tiger on Gold",
+				"Ancient Gems",
+				"Hu Fu Blessing",
+				"Battle Heroes",
+				"Mine of Prosperity",
+				"Eye of RA",
+				"Ninja Legend",
+				"Treasure of Drake",
+				"Immortal Love",
+				"Racing for Luck",
+				"Treasure Guardian",
+				"Fortune’s Warrior",
+				"Chronicle of Heroes 3 Warloads",
+				"Chronicle of Heroes Lucky Dragon",
+				"King of Glory",
+				"Bom Bom Bot",
+				"Counter Terrorists",
+				"Bubble Dragon",
+				"Road to UEFA",
+				"Bobo Monster",
+				"Chronicle of Heroes Divine Tree",
+				"Road To Euro"
+			],
 			images: [
 				{ notSelected: '/images/AP_NotS.webp', selected: '/images/AP_S.webp' },
 				{ notSelected: '/images/JILI_NotS.webp', selected: '/images/JILI_S.webp' },
@@ -284,7 +343,7 @@ export default {
 
 .Middle_Inner_Container a {
 	padding: 0;
-	color: rgba(13, 110, 253);
+	color: #ffc107;
 }
 
 .google-map-link {
@@ -431,5 +490,19 @@ export default {
 .footer-content h2,
 p {
 	color: white;
+}
+
+.footer-content strong {
+	font-weight: 700;
+	color: #ffd700;
+}
+
+.image-wrapper a {
+	text-decoration: none;
+
+}
+
+.DMCA-width {
+	width: 150px;
 }
 </style>

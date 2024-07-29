@@ -1,15 +1,21 @@
 {
-    "message": {
-        "Play": "PLAY",
-        "balance": "Balance:",
-        "Min_Deposit": "Minimum Deposit:",
-        "Min_Withdrawal": "Minimum Withdrawal:",
-        "start_time": "START TIME",
-        "bet_now": "BET NOW",
-        "show_more": "Show More",
-        "team_1": "Man Utd",
-        "team_2": "Fulham"
-
-    }
-  }
-  
+	"message": {
+		"Play": "PLAY",
+		"balance": "Balance:",
+		"Min_Deposit": "Minimum Deposit:",
+		"Min_Withdrawal": "Minimum Withdrawal:",
+		"start_time": "START TIME",
+		"bet_now": "BET NOW",
+		"show_more": "Show More",
+		"team_1": "Man Utd",
+		"team_2": "Fulham"
+	},
+	"content": {
+		"Learn_More": "Learn more about our big partner:",
+		"FP_Link_Word": "Atas Top Online Gaming Platform",
+		"FP_Content": "offers free credit to new players, allowing you to start your gaming journey with extra advantages. As a trusted online gaming platform in Malaysia, we provide a secure and reliable environment for all your gaming needs. Enjoy a wide range of games with confidence, knowing you’re playing on a platform dedicated to fairness, security, and top-notch customer service.",
+		"SP_Link_Word": "ATAS Casino",
+		"SP_F_Content": "H5 3.0 web version",
+		"SP_S_Content": "Discover Malaysia's premier gambling destination at Atas Casino, featuring a wide array of games such as live casino, slots, and sports betting. Known for its top-notch security, vast game variety, and excellent customer service, Atas Casino ensures an outstanding gaming experience for all players."
+	}
+}

@@ -9,9 +9,8 @@
 				<a href="https://t.me/atas77channel" rel="nofollow" target="_blank" class="social-media-icon">
 					<img src="/images/telegram_side_btn.webp" alt="telegram">
 				</a>
-				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow" target="_blank"
-					class="social-media-icon">
-					<img src="/images/fb_side_btn.webp" alt="facebook">
+				<a href=" https://x.com/atascasinomy" rel="nofollow" target="_blank" class="social-media-icon">
+					<img src="/images/fb_side_btn.webp" alt="Twitter">
 				</a>
 			</div>
 			<div class="footer-content">
