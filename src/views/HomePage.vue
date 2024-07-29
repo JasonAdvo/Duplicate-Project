@@ -34,10 +34,12 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
-								<img :src="`/images/MB_${n}_Img.jpg`" alt="Image" @click="redirectToSignUp">
-								<button @click="redirectToSignUp">
+								<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+									<img :src="`/images/MB_${n}_Img.jpg`" alt="Image">
+								</a>
+								<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
 									<p>{{ $t('message.Play') }}</p>
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -63,7 +65,6 @@
 						for its top-notch security, vast game variety, and excellent customer service, Atas Kasino
 						ensures an outstanding gaming experience for all players.
 					</p>
-
 				</div>
 			</div>
 		</div>
@@ -169,9 +170,9 @@ export default {
 				console.error(`Element with selector ${selector} not found`);
 			}
 		},
-		redirectToSignUp() {
-			window.location.href = "https://www.atascasinobet.com/sign-up";
-		}
+		// redirectToSignUp() {
+		// 	window.location.href = "https://www.atascasinobet.com/sign-up";
+		// }
 	}
 }
 </script>
@@ -405,7 +406,7 @@ export default {
 	width: 100%;
 }
 
-.image-wrapper button {
+.image-wrapper p {
 	border-radius: 30px;
 	padding: 3px 0;
 	margin-top: 8px;

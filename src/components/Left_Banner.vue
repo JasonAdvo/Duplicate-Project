@@ -3,20 +3,23 @@
 		<div class="LB_Imgs">
 			<LB_Img_Carousel />
 			<div class="Tablet-Mobile-view">
-				<a href="https://www.atascasinobet.com/sign-up"><img src="/images/LB_Img_2.jpg" alt=""></a>
+				<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/LB_Img_2.jpg"
+						alt="Share"></a>
 				<div class="button-grp">
-					<a href="https://www.atascasinobet.com/sign-up"><img class="col-6" src="/images/M24_Share_btn.gif"
-							alt=""></a>
-					<a href="https://www.atascasinobet.com/sign-up"><img class="col-6"
-							src="/images/M24_Downline_btn.png" alt=""></a>
-					<a href="https://www.atascasinobet.com/sign-up"><img class="col-6" src="/images/M24_Copy_btn.png"
-							alt=""></a>
-					<a href="https://www.atascasinobet.com/sign-up"><img class="col-6" src="/images/M24_More_btn.png"
-							alt=""></a>
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+							src="/images/M24_Share_btn.gif" alt="Share"></a>
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+							src="/images/M24_Downline_btn.png" alt="Downline"></a>
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+							src="/images/M24_Copy_btn.png" alt="Copy"></a>
+					<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img class="col-6"
+							src="/images/M24_More_btn.png" alt="More"></a>
 				</div>
 			</div>
-			<a href="https://www.atascasinobet.com/sign-up"><img src="/images/188welcome_bonus.webp" alt=""></a>
-			<a href="https://www.atascasinobet.com/sign-up"><img src="/images/daily_top_up_bonus.webp" alt=""></a>
+			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/188welcome_bonus.webp"
+					alt="188% Welcome Bonus"></a>
+			<a href="https://www.atascasinobet.com/sign-up" rel="nofollow"><img src="/images/daily_top_up_bonus.webp"
+					alt="Top Up Bonus"></a>
 		</div>
 	</div>
 </template>
