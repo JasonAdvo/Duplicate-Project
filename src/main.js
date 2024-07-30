@@ -7,14 +7,14 @@ import ms from '/src/locales/ms.json';
 import zh from '/src/locales/zh.json';
 
 const messages = {
-  en,
-  ms,
-  zh
+	en,
+	ms,
+	zh
 };
 
 const i18n = createI18n({
-  locale: 'ms',
-  messages
+	locale: 'en',
+	messages
 });
 
 const app = createApp(App);
