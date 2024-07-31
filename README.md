@@ -1,5 +1,4 @@
-# 100-cuci-project
-
+# Duplicate Project
 ## Project setup
 ```
 npm install
