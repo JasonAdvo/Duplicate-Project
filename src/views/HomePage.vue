@@ -38,12 +38,19 @@
 					<div class="MB_Img" id="MB_Img">
 						<div class="image-grid-container">
 							<div class="image-wrapper" v-for="n in 53" :key="n">
-								<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+								<a v-if="n <= 18" :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
 									<img :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
 								</a>
-								<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+								<img v-else :src="`/images/MB_${n}_Img.jpg`" :alt="altTexts[n - 1]">
+
+								<div v-if="n <= 18">
+									<a :href="`https://www.atascasinobet.com/sign-up`" rel="nofollow">
+										<p>{{ $t('message.Play') }}</p>
+									</a>
+								</div>
+								<div v-else>
 									<p>{{ $t('message.Play') }}</p>
-								</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -51,7 +58,7 @@
 
 				<div class="footer-content">
 					<h1>{{ $t('Upper_Content.h1_First_Line') }} | {{ $t('Upper_Content.h1_Second_Line') }}</h1>
-					<p><a href="https://www.mamak24.fun/" rel="nofollow">MAMAK24</a> {{
+					<p><a href="https://www.mamak24.fun/">MAMAK24</a> {{
 						$t('Upper_Content.MAMAK24_Description_FH') }} <strong>{{ $t('Upper_Content.MAMAK24_Ewallet')
 							}}</strong> {{
 								$t('Upper_Content.MAMAK24_Description_SH') }}
@@ -124,7 +131,7 @@
 					<p>{{ $t('MAMAK24-Last-Description.M24_LD') }}</p>
 					<br>
 					<a href="//www.dmca.com/Protection/Status.aspx?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
-						title="DMCA.com Protection Status" class="dmca-badge"> <img class="DMCA-width"
+						title="DMCA.com Protection Status" class="dmca-badge" rel="nofollow"> <img class="DMCA-width"
 							src="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=bd071465-17bf-4b90-b6e5-d51ffeb2271e"
 							alt="DMCA.com Protection Status" />
 					</a>
@@ -175,7 +182,7 @@ export default {
 	data() {
 		return {
 			selectedItem: 0,
-			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks.MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses.Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
+			sentence: `MAMAK24 Official : Asia's Most Trusted and Reliable Gambling Platform  	Experience the top gambling destination in Malaysia, offering an extensive range of games including live casino, slots, and sportsbooks. MAMAK24 stands out with its exceptional security standards, extensive game selection, and highly responsive customer support. Join us today to enjoy generous welcome and promotional bonuses. Login to your account and immerse yourself in your favorite games for a smooth and rewarding gaming experience.`,
 			selectedIndex: 0,
 			altTexts: [
 				"Ramakien Belssing",
